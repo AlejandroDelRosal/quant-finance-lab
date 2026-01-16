@@ -1,6 +1,4 @@
 '''
-Created by Karina Mendoza
-
 Monte Carlo Simulation of Value-at-Risk under GBM and Jump-Diffusion Models
 
 In this project we developed a Python program to estimate and compare Value-at-Risk (VaR) for selected assets
@@ -134,4 +132,5 @@ def comparisson_plot(R_gbm,R_jd):
 for i in assets:
     a= gbm(i)
     b=jd(i)
+
     comparisson_plot(a,b)
