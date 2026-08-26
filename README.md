@@ -8,9 +8,9 @@ Quantitative finance modeling: risk valuation, derivatives pricing, algorithmic 
 - `quantitative-finance/`
   - `VaR_with_gbm_and_jp.py`: Value at Risk and CVaR using Geometric Brownian Motion and Merton Jump-Diffusion
   - `options_pricing_models.py`: Black-Scholes vs Monte Carlo for European options
-  - `Financial time series analysis.py`: SMA crossover backtesting, S&P 500 vs VIX correlation
+  - `financial_time_series_analysis.py`: SMA crossover backtesting, S&P 500 vs VIX correlation
 - `financial-nlp-sentiment/`: VADER-based sentiment engine over financial news headlines (CNBC, Reuters, The Guardian)
-- `finance_engine.py`, `main.py`, `market_data.py`: real-time portfolio manager (OOP, `yfinance` integration, weighted average cost basis)
+- `portfolio-manager/`: real-time portfolio manager (OOP, `yfinance` integration, weighted average cost basis)
 
 ## Roadmap
 
