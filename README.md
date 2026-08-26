@@ -4,6 +4,7 @@ Quantitative finance modeling: risk valuation, derivatives pricing, algorithmic 
 
 ## Contents
 
+- [`statistical-arbitrage/`](statistical-arbitrage/): cointegration screening across ten real equity pairs and an out-of-sample backtest of the strongest candidate (Engle-Granger test, Ornstein-Uhlenbeck half-life)
 - `quantitative-finance/`
   - `VaR_with_gbm_and_jp.py`: Value at Risk and CVaR using Geometric Brownian Motion and Merton Jump-Diffusion
   - `options_pricing_models.py`: Black-Scholes vs Monte Carlo for European options
