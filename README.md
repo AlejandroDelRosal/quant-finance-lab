@@ -1,28 +1,26 @@
-# Stock Portfolio Manager 
+# Quant Finance Lab
 
-A robust, Object-Oriented Python application to manage a financial portfolio. This tool tracks cash balance, stock inventory, and calculates realized gains/losses using **Average Cost Basis** logic. It integrates with the `yfinance` API to provide real-time valuation and uses `matplotlib` for portfolio visualization.
+Modelado cuantitativo de finanzas: valuación de riesgo, pricing de derivados, backtesting algorítmico y NLP de sentimiento de mercado. Parte del [portafolio híbrido](https://github.com/AlejandroDelRosal/Portafolio) de Manuel Alejandro Del Rosal.
 
-## Key Features
+## Contenido actual
 
-* **Object-Oriented Design:** Modular architecture using `Asset` and `Portfolio` classes.
-* **Real-Time Data:** Fetches live market prices using the Yahoo Finance API (`yfinance`).
-* **Trade Logic:** Implements sophisticated buy/sell algorithms, updating average cost and calculating PnL (Profit and Loss).
-* **Data Persistence:** Saves and loads portfolio state (cash + assets) using JSON serialization.
-* **Visualization:** Generates a dynamic pie chart of current asset allocation.
+- **`quantitative-finance/`**
+  - `VaR_with_gbm_and_jp.py` — Value at Risk y CVaR vía Geometric Brownian Motion y Merton Jump-Diffusion
+  - `options_pricing_models.py` — Black-Scholes vs Monte Carlo para opciones europeas
+  - `Financial time series analysis.py` — backtesting de cruce de medias móviles (SMA), correlación S&P 500 vs VIX
+- **`financial-nlp-sentiment/`** — motor de sentimiento con VADER sobre titulares financieros (CNBC, Reuters, The Guardian)
+- **`finance_engine.py`, `main.py`, `market_data.py`** — gestor de portafolio en tiempo real (OOP, integración con `yfinance`, costo promedio ponderado)
 
-## Tech Stack
+## Roadmap
 
-* **Language:** Python 3.x
-* **Libraries:**
-    * `yfinance` (Market Data)
-    * `matplotlib` (Data Visualization)
-    * `json` (Standard Library for Persistence)
+- [ ] Backtesting multi-estrategia con métricas de riesgo (Sharpe, drawdown)
+- [ ] Pricing de derivados exóticos
+- [ ] Conectar el sentiment engine como señal del portfolio manager
 
-## 📂 Project Structure
+## Convenciones
 
-```text
-├── main.py              # Entry point: Handles execution, data fetching, and UI
-├── finance_engine.py    # Core logic: Contains Asset and Portfolio classes
-├── requirements.txt     # Dependency list
-├── my_data.json         # (Auto-generated) Database for persistence
-└── README.md            # Project documentation
+`main` protegido, todo por PR, conventional commits, CI con lint + tests. Ver [CHANGELOG.md](CHANGELOG.md).
+
+## Licencia
+
+MIT — ver [LICENSE](LICENSE).
