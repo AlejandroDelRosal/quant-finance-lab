@@ -4,12 +4,12 @@ Modelado cuantitativo de finanzas: valuación de riesgo, pricing de derivados, b
 
 ## Contenido actual
 
-- **`quantitative-finance/`**
-  - `VaR_with_gbm_and_jp.py` — Value at Risk y CVaR vía Geometric Brownian Motion y Merton Jump-Diffusion
-  - `options_pricing_models.py` — Black-Scholes vs Monte Carlo para opciones europeas
-  - `Financial time series analysis.py` — backtesting de cruce de medias móviles (SMA), correlación S&P 500 vs VIX
-- **`financial-nlp-sentiment/`** — motor de sentimiento con VADER sobre titulares financieros (CNBC, Reuters, The Guardian)
-- **`finance_engine.py`, `main.py`, `market_data.py`** — gestor de portafolio en tiempo real (OOP, integración con `yfinance`, costo promedio ponderado)
+- `quantitative-finance/`
+  - `VaR_with_gbm_and_jp.py`: Value at Risk y CVaR vía Geometric Brownian Motion y Merton Jump-Diffusion
+  - `options_pricing_models.py`: Black-Scholes vs Monte Carlo para opciones europeas
+  - `Financial time series analysis.py`: backtesting de cruce de medias móviles (SMA), correlación S&P 500 vs VIX
+- `financial-nlp-sentiment/`: motor de sentimiento con VADER sobre titulares financieros (CNBC, Reuters, The Guardian)
+- `finance_engine.py`, `main.py`, `market_data.py`: gestor de portafolio en tiempo real (OOP, integración con `yfinance`, costo promedio ponderado)
 
 ## Roadmap
 
@@ -19,8 +19,8 @@ Modelado cuantitativo de finanzas: valuación de riesgo, pricing de derivados, b
 
 ## Convenciones
 
-`main` protegido, todo por PR, conventional commits, CI con lint + tests. Ver [CHANGELOG.md](CHANGELOG.md).
+`main` protegido, todo por PR, conventional commits, CI con lint y tests. Ver [CHANGELOG.md](CHANGELOG.md).
 
 ## Licencia
 
-MIT — ver [LICENSE](LICENSE).
+MIT. Ver [LICENSE](LICENSE).
