@@ -1,26 +1,18 @@
 # Quant Finance Lab
 
-Modelado cuantitativo de finanzas: valuación de riesgo, pricing de derivados, backtesting algorítmico y NLP de sentimiento de mercado. Parte del [portafolio híbrido](https://github.com/AlejandroDelRosal/Portafolio) de Manuel Alejandro Del Rosal.
+Quantitative finance modeling: risk valuation, derivatives pricing, algorithmic backtesting, and market sentiment analysis. Part of the [portfolio](https://github.com/AlejandroDelRosal/Portafolio) of Manuel Alejandro Del Rosal.
 
-## Contenido actual
+## Contents
 
-- **`quantitative-finance/`**
-  - `VaR_with_gbm_and_jp.py` — Value at Risk y CVaR vía Geometric Brownian Motion y Merton Jump-Diffusion
-  - `options_pricing_models.py` — Black-Scholes vs Monte Carlo para opciones europeas
-  - `Financial time series analysis.py` — backtesting de cruce de medias móviles (SMA), correlación S&P 500 vs VIX
-- **`financial-nlp-sentiment/`** — motor de sentimiento con VADER sobre titulares financieros (CNBC, Reuters, The Guardian)
-- **`finance_engine.py`, `main.py`, `market_data.py`** — gestor de portafolio en tiempo real (OOP, integración con `yfinance`, costo promedio ponderado)
+- `quantitative-finance/`
+  - `VaR_with_gbm_and_jp.py`: Value at Risk and CVaR using Geometric Brownian Motion and Merton Jump-Diffusion
+  - `options_pricing_models.py`: Black-Scholes vs Monte Carlo for European options
+  - `Financial time series analysis.py`: SMA crossover backtesting, S&P 500 vs VIX correlation
+- `financial-nlp-sentiment/`: VADER-based sentiment engine over financial news headlines (CNBC, Reuters, The Guardian)
+- `finance_engine.py`, `main.py`, `market_data.py`: real-time portfolio manager (OOP, `yfinance` integration, weighted average cost basis)
 
 ## Roadmap
 
-- [ ] Backtesting multi-estrategia con métricas de riesgo (Sharpe, drawdown)
-- [ ] Pricing de derivados exóticos
-- [ ] Conectar el sentiment engine como señal del portfolio manager
-
-## Convenciones
-
-`main` protegido, todo por PR, conventional commits, CI con lint + tests. Ver [CHANGELOG.md](CHANGELOG.md).
-
-## Licencia
-
-MIT — ver [LICENSE](LICENSE).
+- [ ] Multi-strategy backtesting with risk metrics (Sharpe ratio, drawdown)
+- [ ] Exotic derivatives pricing
+- [ ] Connect the sentiment engine as a signal for the portfolio manager
